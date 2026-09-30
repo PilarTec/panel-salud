@@ -10,26 +10,26 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Vigilancia y Métricas EMO',
+    title: 'Dashboard y Métricas',
     description: (
       <>
-        Consolidación de evaluaciones periódicas, indicadores de cobertura por sede, porcentaje de vigencia y control de trabajadores observados.
+        Muestra el total de exámenes médicos por sede, cuántos están al día o vencidos y el porcentaje de trabajadores observados.
       </>
     ),
   },
   {
-    title: 'Clasificación y Triaje de Hallazgos',
+    title: 'Catálogo de Hallazgos',
     description: (
       <>
-        Normalización de diagnósticos mediante sinónimos, matriz de riesgo ponderado (Crítico, Alto, Medio, Bajo) y administración de categorías.
+        Permite clasificar diagnósticos, agrupar sinónimos, asignar niveles de riesgo (Crítico, Alto, Medio, Bajo) y ordenar por categorías.
       </>
     ),
   },
   {
-    title: 'Protocolos y Ficha Médica',
+    title: 'Ficha del Paciente',
     description: (
       <>
-        Seguimiento de programas de vigilancia ocupacional (PREXOR, Altura, Ergonómicos), gestión de aptitud laboral y trazabilidad por paciente.
+        Permite revisar los datos de cada trabajador, sus diagnósticos asignados, historial de exámenes y su condición de aptitud.
       </>
     ),
   },

@@ -5,31 +5,31 @@ title: Introducción
 
 # Panel de Salud Ocupacional
 
-Documentación técnica y funcional del sistema de vigilancia epidemiológica y gestión de Exámenes Médicos Ocupacionales (EMO).
+Documentación del sistema web para gestionar y consultar exámenes médicos de los trabajadores.
 
 ---
 
-## Objetivos del Sistema
+## Qué hace el sistema
 
-1. **Centralización de datos:** Consolidación de nóminas médicas periódicas, de ingreso y de retiro en base de datos protegida.
-2. **Seguimiento epidemiológico:** Indicadores de cobertura, vigencia de exámenes y distribución de aptitud en tiempo real.
-3. **Estandarización diagnóstica:** Normalización de hallazgos mediante sinónimos y matriz de severidad ponderada (Crítico, Alto, Medio, Bajo).
-4. **Vigilancia por protocolos:** Trazabilidad de agentes ocupacionales (ruido, altura física/geográfica, ergonomía).
+1. **Guardar datos de exámenes:** Permite subir y almacenar la información de exámenes de ingreso, periódicos y de retiro.
+2. **Control de vigencias y aptitud:** Muestra cuántos trabajadores tienen sus exámenes al día, cuántos están vencidos y quiénes tienen observaciones médicas.
+3. **Catálogo de diagnósticos:** Ordena los hallazgos médicos por categorías y permite clasificarlos por nivel de riesgo (Crítico, Alto, Medio, Bajo).
+4. **Filtros por puesto de trabajo:** Permite buscar trabajadores expuestos a ruido, trabajo en altura o esfuerzo físico.
 
 ---
 
-## Módulos Principales
+## Módulos del Sistema
 
-| Módulo | Alcance |
+| Módulo | Descripción |
 |---|---|
-| **[Dashboard](./modulo-dashboard)** | Métricas ejecutivas, coberturas y evolución temporal. |
-| **[Exámenes y Protocolos](./modulo-examenes)** | Desglose por tipo de evaluación, sede y factores de riesgo. |
-| **[Catálogo y Triaje](./modulo-catalogo)** | Matriz de riesgo, administración de diagnósticos y sinónimos. |
-| **[Verificación de Pacientes](./modulo-pacientes)** | Consulta nominal, ficha médica individual y control de aptitud. |
+| **[Dashboard](./modulo-dashboard)** | Resumen general con gráficos, totales por sede y estado de exámenes. |
+| **[Exámenes y Protocolos](./modulo-examenes)** | Lista detallada por tipo de examen, sede y factores de riesgo. |
+| **[Catálogo y Triaje](./modulo-catalogo)** | Lista de diagnósticos, niveles de riesgo y vinculación de términos nuevos. |
+| **[Verificación de Pacientes](./modulo-pacientes)** | Búsqueda por trabajador, ficha médica y estado de aptitud. |
 
 ---
 
 ## Seguridad
-- Autenticación requerida para todas las consultas y modificaciones en base de datos.
-- Aislamiento de credenciales mediante variables de entorno locales.
-- Reglas de Firestore que restringen la lectura y escritura a cuentas autorizadas.
+- Inicio de sesión obligatorio para ver o editar información.
+- Claves de conexión guardadas en variables de entorno `.env` en lugar del código fuente.
+- Reglas en Firestore para que solo usuarios autorizados puedan leer o guardar datos.
