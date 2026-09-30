@@ -1,0 +1,15 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Solo usuarios autenticados pueden consultar o actualizar evaluaciones médicas
+    match /evaluaciones/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Configuración global del catálogo accesible solo para usuarios autenticados
+    match /configuracion/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
