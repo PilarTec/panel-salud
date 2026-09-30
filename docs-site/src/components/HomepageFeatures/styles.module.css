@@ -1,0 +1,23 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.featureIconContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(59, 130, 246, 0.2) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+.featureIcon {
+  font-size: 3rem;
+  line-height: 1;
+}

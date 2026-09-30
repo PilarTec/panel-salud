@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docs:dev": "npm --prefix docs-site run start",
+    "docs:build": "npm --prefix docs-site run build",
+    "docs:serve": "npm --prefix docs-site run serve"
   },
   "devDependencies": {
     "@headlessui/tailwindcss": "^0.2.2",
