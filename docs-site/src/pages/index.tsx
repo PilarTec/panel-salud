@@ -13,24 +13,23 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <div style={{ fontSize: '4.5rem', marginBottom: '1rem' }}>🩺</div>
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle" style={{ maxWidth: '750px', margin: '0 auto 2rem auto', fontSize: '1.25rem', opacity: 0.9 }}>
+        <p className="hero__subtitle" style={{ maxWidth: '720px', margin: '0 auto 2rem auto', fontSize: '1.2rem', opacity: 0.9 }}>
           {siteConfig.tagline}
         </p>
         <div className={styles.buttons} style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link
             className="button button--secondary button--lg"
             to="/versiones">
-            🚀 Registro de Versiones (Changelog)
+            Registro de Versiones
           </Link>
           <Link
             className="button button--outline button--lg"
             style={{ color: '#fff', borderColor: '#fff' }}
             to="/docs/intro">
-            📖 Documentación de Módulos
+            Documentación Técnica
           </Link>
         </div>
       </div>
@@ -42,8 +41,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} - Avances y Documentación`}
-      description="Portal oficial de documentación, registro de versiones y vigilancia epidemiológica del Panel de Salud Ocupacional.">
+      title={siteConfig.title}
+      description="Documentación y registro de versiones del Panel de Salud Ocupacional.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

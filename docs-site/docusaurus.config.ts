@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Panel de Salud Ocupacional',
-  tagline: 'Vigilancia médica, trazabilidad EMO y gestión inteligente de hallazgos',
+  tagline: 'Sistema de vigilancia médica y gestión de exámenes ocupacionales',
   favicon: 'img/favicon.ico',
 
   url: 'https://pilartec.github.io',
@@ -30,9 +30,9 @@ const config: Config = {
         },
         blog: {
           routeBasePath: 'versiones',
-          blogTitle: 'Novedades y Registro de Versiones',
-          blogDescription: 'Historial de versiones, avances y mejoras del Panel de Salud Ocupacional',
-          blogSidebarTitle: 'Historial de Versiones',
+          blogTitle: 'Historial de Versiones',
+          blogDescription: 'Registro de cambios y actualizaciones del sistema',
+          blogSidebarTitle: 'Versiones',
           blogSidebarCount: 'ALL',
           showReadingTime: false,
           onInlineTags: 'ignore',
@@ -55,20 +55,20 @@ const config: Config = {
     navbar: {
       title: 'Panel de Salud',
       logo: {
-        alt: 'Logo Panel de Salud',
+        alt: 'Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
           to: '/versiones',
-          label: '🚀 Registro de Versiones',
+          label: 'Versiones',
           position: 'left',
         },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '📖 Módulos y Documentación',
+          label: 'Documentación',
         },
         {
           href: 'https://github.com/PilarTec/panel-salud',

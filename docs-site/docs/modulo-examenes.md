@@ -1,19 +1,19 @@
 ---
 sidebar_position: 3
-title: Módulo Exámenes y Protocolos
+title: Exámenes y Protocolos
 ---
 
-# Módulo de Exámenes y Protocolos
+# Exámenes y Protocolos
 
-Este módulo permite analizar el cumplimiento y los resultados de las evaluaciones médicas agrupadas por protocolos específicos y agentes ocupacionales.
+Módulo de análisis de evaluaciones médicas segmentadas por tipo de evaluación y factores de riesgo ocupacional.
 
 ---
 
-## 🔍 Características Principales
+## Segmentación de Datos
 
-- **Desglose por Tipo de Examen:** Periódicos, Pre-ocupacionales, Retiro y Reubicación.
-- **Vigilancia por Agentes de Riesgo:**
-  - *PREXOR / Ruido:* Detección temprana de hipoacusias y cambios en el umbral auditivo.
-  - *Gran Altura Geográfica:* Control de parámetros cardiovasculares y hemoglobina.
-  - *Manejo Manual de Cargas:* Evaluación osteomuscular y detección de lumbalgias o cervicalgias.
-- **Distribución Demográfica:** Gráficos segmentados por género y rangos etarios.
+- **Tipos de Examen:** Periódicos, pre-ocupacionales, de egreso y reubicaciones.
+- **Protocolos de Vigilancia Específica:**
+  - *Ruido (PREXOR):* Detección de desplazamientos del umbral auditivo e hipoacusias.
+  - *Gran Altura:* Seguimiento cardiovascular y niveles de hemoglobina.
+  - *Ergonomía / Cargas:* Registro de patologías osteomusculares (lumbagos, cervicalgias).
+- **Parámetros Demográficos:** Distribución por rangos de edad y género.

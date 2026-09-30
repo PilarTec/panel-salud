@@ -1,27 +1,27 @@
 ---
 sidebar_position: 2
-title: Módulo Dashboard
+title: Dashboard
 ---
 
-# Módulo de Tablero Ejecutivo (Dashboard)
+# Tablero Ejecutivo (Dashboard)
 
-El **Dashboard** es la vista inicial que proporciona a los tomadores de decisiones una visión panorámica y en tiempo real del estado de salud de los trabajadores.
-
----
-
-## 📊 Indicadores Clave de Desempeño (KPIs)
-
-- **Cobertura EMO:** Porcentaje de trabajadores evaluados respecto al total de trabajadores programados.
-- **Vigentes:** Total y porcentaje de trabajadores con examen médico ocupacional al día.
-- **Vencidos:** Cantidad de colaboradores cuyos exámenes han caducado y requieren reevaluación.
-- **Observados:** Proporción de trabajadores con aptitud médica "Observado".
-- **Hallazgos Críticos:** Conteo dinámico y exacto de personas que presentan diagnósticos clasificados con nivel de riesgo *Crítico*.
+Vista principal para el seguimiento de indicadores globales de salud ocupacional.
 
 ---
 
-## 📈 Visualizaciones Disponibles
+## Indicadores (KPIs)
 
-1. **Estado de EMOs:** Gráfico de dona con la distribución entre vigentes y vencidos.
-2. **Evolución Temporal:** Gráfico de línea que muestra el avance mensual de coberturas y pacientes observados.
-3. **Cumplimiento por Sede / Proceso:** Barras comparativas para identificar áreas con menor tasa de avance.
-4. **Filtros Globales:** Selector de Año, Periodo (Mes), Sede y Protocolos con actualización reactiva instantánea.
+- **Cobertura EMO:** Proporción de evaluaciones realizadas frente al total programado.
+- **Vigentes:** Total de trabajadores con examen médico dentro del periodo de validez.
+- **Vencidos:** Cantidad de colaboradores con evaluación caducada que requieren citación.
+- **Observados:** Porcentaje de trabajadores con condición médica observada.
+- **Hallazgos Críticos:** Conteo de personas que registran al menos un diagnóstico de severidad crítica según el catálogo activo.
+
+---
+
+## Gráficos y Filtros
+
+- **Distribución de Vigencias:** Gráfico comparativo entre estados vigente y vencido.
+- **Tendencia Mensual:** Evolución temporal de cobertura y casos observados.
+- **Cumplimiento por Sede:** Comparativa de avance por centro de trabajo o proceso.
+- **Filtros Aplicables:** Selección combinada de año, mes, sede y tipo de protocolo.

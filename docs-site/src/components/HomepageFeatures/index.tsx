@@ -5,51 +5,42 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  icon: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Monitoreo Epidemiológico en Tiempo Real',
-    icon: '📊',
+    title: 'Vigilancia y Métricas EMO',
     description: (
       <>
-        Indicadores clave (KPIs) de cobertura de EMOs, vigencia, colaboradores observados y detección automática de hallazgos críticos por sede y periodo.
+        Consolidación de evaluaciones periódicas, indicadores de cobertura por sede, porcentaje de vigencia y control de trabajadores observados.
       </>
     ),
   },
   {
-    title: 'Matriz Dinámica de Hallazgos y Triaje',
-    icon: '🧪',
+    title: 'Clasificación y Triaje de Hallazgos',
     description: (
       <>
-        Ponderación configurable de riesgos (Crítico, Alto, Medio, Bajo), normalización con diccionario de sinónimos y creación de nuevas categorías médicas.
+        Normalización de diagnósticos mediante sinónimos, matriz de riesgo ponderado (Crítico, Alto, Medio, Bajo) y administración de categorías.
       </>
     ),
   },
   {
-    title: 'Vigilancia Médica por Protocolo',
-    icon: '🩺',
+    title: 'Protocolos y Ficha Médica',
     description: (
       <>
-        Control de agentes de riesgo (PREXOR, Altura Física, Cargas), ficha médica integrada de exámenes auxiliares y cambio seguro de condición de aptitud.
+        Seguimiento de programas de vigilancia ocupacional (PREXOR, Altura, Ergonómicos), gestión de aptitud laboral y trazabilidad por paciente.
       </>
     ),
   },
 ];
 
-function Feature({title, icon, description}: FeatureItem) {
+function Feature({title, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <div className={styles.featureIconContainer}>
-          <span className={styles.featureIcon}>{icon}</span>
-        </div>
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+    <div className={clsx('col col--4', styles.featureCol)}>
+      <div className={styles.featureCard}>
+        <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
+        <p className={styles.featureDescription}>{description}</p>
       </div>
     </div>
   );
