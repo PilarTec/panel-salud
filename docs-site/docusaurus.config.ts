@@ -29,10 +29,10 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
         },
         blog: {
-          routeBasePath: 'versiones',
-          blogTitle: 'Historial de Versiones',
-          blogDescription: 'Registro de cambios y actualizaciones del sistema',
-          blogSidebarTitle: 'Versiones',
+          routeBasePath: 'updates',
+          blogTitle: 'Updates del Proyecto',
+          blogDescription: 'Registro de avances tecnicos y cambios del sistema',
+          blogSidebarTitle: 'Updates Recientes',
           blogSidebarCount: 'ALL',
           showReadingTime: false,
           onInlineTags: 'ignore',
@@ -60,8 +60,8 @@ const config: Config = {
       },
       items: [
         {
-          to: '/versiones',
-          label: 'Versiones',
+          to: '/updates',
+          label: 'Updates',
           position: 'left',
         },
         {
@@ -90,11 +90,11 @@ const config: Config = {
           ],
         },
         {
-          title: 'Actualizaciones',
+          title: 'Avances',
           items: [
             {
-              label: 'Todas las Versiones',
-              to: '/versiones',
+              label: 'Historial de Updates',
+              to: '/updates',
             },
           ],
         },

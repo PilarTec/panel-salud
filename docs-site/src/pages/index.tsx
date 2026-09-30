@@ -22,8 +22,8 @@ function HomepageHeader() {
         <div className={styles.buttons} style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link
             className="button button--secondary button--lg"
-            to="/versiones">
-            Registro de Versiones
+            to="/updates">
+            Updates del Proyecto
           </Link>
           <Link
             className="button button--outline button--lg"
