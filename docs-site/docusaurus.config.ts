@@ -7,8 +7,9 @@ const config: Config = {
   tagline: 'Vigilancia médica, trazabilidad EMO y gestión inteligente de hallazgos',
   favicon: 'img/favicon.ico',
 
-  url: 'https://PilarTec.github.io',
-  baseUrl: '/',
+  url: 'https://pilartec.github.io',
+  baseUrl: '/panel-salud/',
+  trailingSlash: false,
 
   organizationName: 'PilarTec',
   projectName: 'panel-salud',
